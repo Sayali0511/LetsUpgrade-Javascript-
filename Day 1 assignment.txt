@@ -1,0 +1,54 @@
+Q1-Ans:
+assert()- Writes an error message to the console if the assertion is false.
+group()- Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
+clear()- Clears the console
+count()- Logs the number of times that this particular call to count() has been called
+error()- Outputs an error message to the console
+log()- Outputs a message to the console
+time()- Starts a timer (can track how long an operation takes)
+timeEnd()- Stops a timer that was previously started by console.time()
+trace()- Outputs a stack trace to the console
+warn()- Outputs a warning message to the console
+info()- Outputs an informational message to the console
+table()- Displays tabular data as a table
+
+---------------------------------------------------------------------------------------------------------------
+
+Q2-Ans:
+
+=> var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
+var is “function scoped”.
+eg.
+
+ var S = "hey hi";
+    
+    function newFunction() {
+        var hello = "hello";
+    }
+Here, greeter is globally scoped because it exists outside a function while hello is function scoped. So we cannot access the variable hello outside of a function.
+
+=> let: The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+“let” and “const” are“block scoped”.
+eg.
+	let a= 30;
+
+=> const: The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
+“const” cannot be re-assigned to a new value. However it CAN be mutated.
+eg. 	
+	const PI=3.14 ;
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Q3-Ans:
+
+There are 8 basic data types in JavaScript.
+- number for numbers of any kind: integer or floating-point, integers are limited by ±253.
+- bigint is for integer numbers of arbitrary length.
+- string for strings. A string may have zero or more characters, there’s no separate single-character type.
+- boolean for true/false.
+- null for unknown values – a standalone type that has a single value null.
+- undefined for unassigned values – a standalone type that has a single value undefined.
+- object for more complex data structures.
+- symbol for unique identifiers.
+
